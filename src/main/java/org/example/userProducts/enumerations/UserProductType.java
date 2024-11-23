@@ -1,6 +1,6 @@
 package org.example.userProducts.enumerations;
 
-public enum ProductType {
+public enum UserProductType {
     ACCOUNT,
-    CARD
+    CARD;
 }

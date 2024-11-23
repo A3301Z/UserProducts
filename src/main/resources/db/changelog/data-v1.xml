@@ -1,0 +1,51 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="23.11.24-data-for-user_id-1" author="3301">
+        <insert tableName="products">
+            <column name = "id" value = "ae8f1bc6-3824-4d74-81b5-ee8f68391b88" />
+            <column name = "user_id" valueNumeric = "1" />
+            <column name = "product_type" value = "ACCOUNT" />
+            <column name = "account_number" value = "account_001" />
+            <column name = "balance" valueNumeric = "150000" />
+        </insert>
+
+        <insert tableName="products">
+            <column name = "id" value = "b929eff8-c4bd-4451-b871-7765a3654cba" />
+            <column name = "user_id" valueNumeric = "1" />
+            <column name = "product_type" value = "CARD" />
+            <column name = "account_number" value = "account_002" />
+            <column name = "balance" valueNumeric = "5400" />
+        </insert>
+    </changeSet>
+
+    <changeSet id="23.11.24-data-for-user_id-2" author="3301">
+        <insert tableName="products">
+            <column name = "id" value = "39d1a13e-aae0-47b2-973b-91168fcaa764" />
+            <column name = "user_id" valueNumeric = "2" />
+            <column name = "product_type" value = "ACCOUNT" />
+            <column name = "account_number" value = "account_003" />
+            <column name = "balance" valueNumeric = "2000" />
+        </insert>
+
+        <insert tableName="products">
+            <column name = "id" value = "5acb0f7e-5d36-4276-b750-f23493952d95" />
+            <column name = "user_id" valueNumeric = "2" />
+            <column name = "product_type" value = "ACCOUNT" />
+            <column name = "account_number" value = "account_004" />
+            <column name = "balance" valueNumeric = "14000" />
+        </insert>
+
+        <insert tableName="products">
+            <column name = "id" value = "0ca10848-16bf-42ae-8500-9ea664c772cd" />
+            <column name = "user_id" valueNumeric = "2" />
+            <column name = "product_type" value = "CARD" />
+            <column name = "account_number" value = "account_005" />
+            <column name = "balance" valueNumeric = "80000" />
+        </insert>
+    </changeSet>
+
+
+</databaseChangeLog>

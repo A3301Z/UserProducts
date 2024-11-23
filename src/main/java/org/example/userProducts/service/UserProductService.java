@@ -1,24 +1,24 @@
 package org.example.userProducts.service;
 
-import org.example.userProducts.dto.ProductDto;
+import org.example.userProducts.dto.UserProductDto;
 
 import java.util.List;
 import java.util.UUID;
 
 /**
- * Сервис для работы с {@link ProductDto}
+ * Сервис для работы с {@link UserProductDto}
  */
-public interface ProductService {
+public interface UserProductService {
 
     /**
      * Найти продукт по id
      * @param id - уникальный идентификатор продукта пользователя
      */
-    ProductDto findById(UUID id);
+    UserProductDto findById(UUID id);
 
     /**
      * Найти все продукты пользователя по userId
      * @param userId - уникальный идентификатор пользователя
      */
-    List<ProductDto> findAllByUserId(UUID userId);
+    List<UserProductDto> findAllByUserId(long userId);
 }

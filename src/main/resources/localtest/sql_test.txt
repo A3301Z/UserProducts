@@ -1,0 +1,19 @@
+CREATE TABLE products
+(
+    id             UUID PRIMARY KEY,
+    user_id        NUMERIC,
+    account_number VARCHAR(255),
+    balance        BIGINT,
+    product_type   VARCHAR(255)
+);
+
+INSERT INTO products (id, user_id, account_number, balance, product_type)
+VALUES
+    ('ae8f1bc6-3824-4d74-81b5-ee8f68391b88', 1, 'account_001', 1000, 'ACCOUNT'),
+    ('b929eff8-c4bd-4451-b871-7765a3654cba', 1, 'account_002', 2000, 'CARD');
+
+INSERT INTO products (id, user_id, account_number, balance, product_type)
+VALUES
+    ('39d1a13e-aae0-47b2-973b-91168fcaa764', 2, 'account_003', 1500, 'ACCOUNT'),
+    ('5acb0f7e-5d36-4276-b750-f23493952d95', 2, 'account_004', 2500, 'CARD'),
+    ('0ca10848-16bf-42ae-8500-9ea664c772cd', 2, 'account_005', 3000, 'ACCOUNT');
